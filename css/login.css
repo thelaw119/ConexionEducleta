@@ -1,0 +1,30 @@
+html,
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .panel-primary>.panel-heading {
+      color: #fff;
+      background-color: #8a1252 !important;
+      border-color: #8a1252 !important;
+    }
+
+    .panel-primary {
+      border-color: #8a1252 !important;
+    }
+
+    .btn-success {
+      color: #fff;
+      background-color: #37a441 !important;
+      border-color: #37a441 !important;
+    }
