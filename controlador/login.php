@@ -33,7 +33,11 @@ if($consulta->num_rows > 0){
     
     if($codigo_perfil == 1){
         $_SESSION['nick_usuario'] = $nick_usuario;
+        $_SESSION['nombre_completo'] = $nombre_completo;
+        $_SESSION['correo_usuario'] = $correo_usuario;
+        $_SESSION['password_usuario'] = $password_usuario;
         $_SESSION['nombre_perfil'] = $perfil;
+        $_SESSION['id_usuario'] = $codigo_usuario;
         header("Location:http://192.168.100.2/conexioneducleta/vista/admin/admin.php");
     }else{
         $_SESSION['nick_usuario'] = $nick_usuario;

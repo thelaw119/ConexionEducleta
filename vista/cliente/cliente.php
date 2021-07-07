@@ -67,7 +67,7 @@ if (!isset($_SESSION["nick_usuario"])) {
         <script type='text/javascript' src='../../js/bootstrap.min.js'></script>
         <script type='text/javascript' src='../../js/functions.min.js'></script>
         <script type='text/javascript' src='../../js/menu_cliente.js'></script>
-        
+        <script type='text/javascript' src='../../js/editar_cliente.js'></script>
 
         <link rel="icon" href="../../img/cropped-FAV-32x32.png" sizes="32x32" />
         <link rel="icon" href="../../img/cropped-FAV-192x192.png" sizes="192x192" />
@@ -137,7 +137,7 @@ if (!isset($_SESSION["nick_usuario"])) {
                                     <ul id="menu-mainmenu" class="nav navbar-nav">
                                         <li id="menu-item-644"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-90 current_page_item menu-item-644 active">
-                                            <a title="Inicio" href="#" onclick="javascript:inicio();">Inicio</a>
+                                            <a title="Inicio" href="http://192.168.100.2/conexioneducleta/vista/cliente/cliente.php" >Inicio</a>
                                         </li>
                                         <li id="menu-item-644"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-90 current_page_item menu-item-644">
@@ -211,19 +211,23 @@ if (!isset($_SESSION["nick_usuario"])) {
                     </div>
 
                     <div id="line"></div>
-                    
-                    <div class="bienvenida">
-                        <div class="aligncenter text-center">
-                            <!--Agregamos el nombre completo del usuario-->
-                            <h2>Bienvenid@ <?php echo $_SESSION["nombre_completo"];?></h2>
-                            <h4>Bienvenid@  al Sistema  de Educleta.</h4>
-                            <h4>Cambiemos la forma de hacer clases</h4>
+
+                    <div class="text-left">
+                        <h2>Bienvenid@ <?php echo $_SESSION["nombre_completo"];?></h2>
+                        <div class=" alignleft text-left">
+                            <p></p>
+                            <h4>Bienvenid@ al Sistema  de Educleta.
+                            Cambiemos la forma de hacer clases</h4>
                             <h4>Generando comunidades entre profesor@s ;)</h4>
                         </div>
                     </div>
+
+
                 </div>
             </header>
             <div>
+            <br>
+            <br>
                             <div class="content-header" id="contenido">
 
                             </div>
